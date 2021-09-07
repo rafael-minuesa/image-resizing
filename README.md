@@ -15,10 +15,10 @@ Use the button below to deploy the worker automatically to your Cloudflare zone
 [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/Vortexmind/image-resizing)
 
 Or you can clone the repository and use `wrangler` to deploy it.
-Once deployed - to activate it you need to configure a route to your `/content/images` path to the worker
+Once deployed - to activate it you need to configure a route to your `/wp-content/uploads` path to the worker
 For example
 ```
-https://www.yourblog.com/content/images/*
+https://www.yourblog.com/wp-content/uploads/*
 ```
 
 This ensures that image requests under that path are intercepted by the worker and resized as appopriate
